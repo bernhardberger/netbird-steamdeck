@@ -30,6 +30,9 @@ jobs:
           pnpm install --frozen-lockfile=false
           pnpm run build
 
+      - name: Run Python unit tests
+        run: pnpm test
+
       - name: Read version
         id: version
         run: |
